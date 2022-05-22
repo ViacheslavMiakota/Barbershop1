@@ -1,0 +1,27 @@
+/*Основной колір тексту background: #303030; */
+
+/*Другорядний колір тексту background: #555555;*/
+/*Додатковий колір тексту  background: #9DA4BD ;*/
+/*Колір помаранчевий акцент #FF6C00; */
+/* Колір тексту білий #FFFFFF */
+
+:root {
+  --primary-text-color: #303030;
+  --title-text-color: #555555;
+  --accent-color: #ff6c00;
+  --adres-color: background: #9DA4BD;
+  --wite-text-color: #ffffff;
+  --button-color: ;
+  --logo-color: ;
+  --background-color: ;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.list{
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+}

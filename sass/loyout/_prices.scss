@@ -1,0 +1,56 @@
+.priсes {
+    background-color: #303030;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .price-wrap {
+    display: flex;
+  }
+  .price-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 1.36;
+    text-transform: uppercase;
+    color: var(--hero-color);
+    padding-bottom: 20px;
+  }
+  .price-name {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--wite-text-color);
+    padding: bottom 44px;
+  }
+  .price-list {
+    padding: 30px 40px;
+    flex-grow: 1;
+  }
+  .price-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--typical-margin);
+  }
+  .price-item-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--adres-color);
+  }
+  .price-item:last-child {
+    margin-bottom: 0;
+  }
+  .price-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--wite-text-color);
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+  }

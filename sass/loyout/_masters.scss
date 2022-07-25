@@ -1,80 +1,74 @@
 .masters {
-    padding-top: 130px;
-    padding-bottom: 130px;
-  }
-  .masters-top-name {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding-top: var(--typical-margin);
-  }
-  .masters-names {
-    padding-bottom: 44px;
-  }
-  .masters-name {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.39;
-    text-align: center;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    margin-top: 30px;
-  }
-  .masters-list {
+  display: flex;
+  background-color: #f7f7f7;
+  &-box {
     display: flex;
-    margin-left: -30px;
+    flex-direction: column;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .masters-item {
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
+}
+.masters-top-name {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-bottom: var(--typical-margin);
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: var(--second-title-color);
+    margin-right: 40px;
   }
-  .masters-tytle {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
+}
+.masters-names {
+  padding-bottom: 44px;
+  font-family: "Raleway";
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+.masters-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 64px;
+  justify-content: center;
+  @media screen and(max-width: 768px) {
+    padding-left: auto;
+    padding-right: auto;
   }
-  .work {
-    padding-top: 130px;
-    padding-bottom: 130px;
+}
+
+.masters-item {
+  width: 100%;
+  @include tablet {
+    max-width: 450px;
   }
-  .work-top-name {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    padding-bottom: 44px;
+  @include desktop {
+    width: calc((100% - 60px) / 3);
   }
-  /* .work-name {
-  } */
-  .work-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -70px;
-    margin-bottom: -70px;
-  }
-  .work-item {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-  /* .section-write {
-  } */
-  /* .write {
-  } */
-  /* .contact {
-  } */
-  .contact-name {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.67;
-    letter-spacing: 0.05em;
-    color: var(--wite-text-color);
-  }
+}
+.masters-tytle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}

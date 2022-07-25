@@ -1,52 +1,99 @@
 .benefits {
-    padding-top: 143px;
-    padding-bottom: 138px;
+  display: flex;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+}
+.benefits-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 170px;
+  max-height: 130px;
+  padding: 20px 24px;
+  background-color: #f7f7f7;
+  &:nth-child(odd) {
+    margin-right: 30px;
   }
-  /* .benefits-list {
-  } */
-  .benefits-item {
-    width: 170px;
-    height: 130px;
-    border: 1px solid #303030;
-    padding: 20px 24px;
+  &:nth-child(even) {
+    margin-top: 30px;
   }
-  .benefit-count {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: var(--primary-text-color);
-    display: block;
-  }
-  .benefits-text {
+}
+.benefits-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+  display: flex;
+  &::after {
+    content: "+";
     font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
+    font-size: 16px;
+    line-height: 1.38;
     text-align: center;
-    color: var(--primary-text-color);
+    color: var(--accent-color);
+    vertical-align: top;
   }
-  .benefits-top-name {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
+}
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--second-title-color);
+}
+.benefits-top-name {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: var(--second-title-color);
+    margin-right: 40px;
   }
-  .benefits-name {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
-    color: var(--primary-text-color);
+}
+.benefits-box {
+  display: flex;
+  flex-direction: column-reverse;
+  @include desktop {
+    justify-content: space-between;
+    flex-direction: row;
   }
-  .benefits-botton-name {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: var(--title-text-color);
+}
+.benefits-name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+.benefits-botton-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.benefits-about {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 44px;
+  @include desktop {
+    max-width: 640px;
   }
+}

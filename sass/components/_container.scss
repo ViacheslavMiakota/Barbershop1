@@ -1,15 +1,12 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  @include mobile {
-    width: 448px;
-  }
+  padding: 84px 31px;
   @include tablet {
-    width: 720px;
+    padding: 100px 39px;
   }
   @include desktop {
-    width: 1200px;
+    max-width: 1280px;
+    padding: 130px 55px;
   }
 }
